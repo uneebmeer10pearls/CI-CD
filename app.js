@@ -7,7 +7,7 @@ var app = express();
 //  origin: 'http://localhost:3000',
 //  credentials : true
 // }
-
+var port = process.env.PORT || 8080;
 // app.use(cors(corsOptions));
 app.post("/test", (req, res, next) => {
     // console.log(req.get('origin'))
@@ -18,7 +18,7 @@ app.get("/", (req, res, next) => {
  // return "Hello World";
   res.send("Hello World")
 });
-app.listen(4400, () => {
+app.listen(port, () => {
  console.log("Server running on port 3000");
 });
 
