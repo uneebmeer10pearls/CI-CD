@@ -13,6 +13,11 @@ app.post("/test", (req, res, next) => {
     // console.log(req.get('origin'))
  res.json(["Tony","Lisa","Michael","Ginger","Food"]);
 });
+app.get("/", (req, res, next) => {
+ // res.json(["Tony","Lisa","Michael","Ginger","Food"]);
+ // return "Hello World";
+  res.send("Hello World")
+});
 app.listen(4400, () => {
  console.log("Server running on port 3000");
 });
