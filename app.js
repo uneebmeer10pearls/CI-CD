@@ -14,8 +14,6 @@ app.post("/test", (req, res, next) => {
  res.json(["Tony","Lisa","Michael","Ginger","Food"]);
 });
 app.get("/", (req, res, next) => {
- // res.json(["Tony","Lisa","Michael","Ginger","Food"]);
- // return "Hello World";
   res.send("Hello World23456")
 });
 app.listen(port, () => {
