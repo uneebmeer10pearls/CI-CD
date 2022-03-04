@@ -14,7 +14,7 @@ app.post("/test", (req, res, next) => {
  res.json(["Tony","Lisa","Michael","Ginger","Food"]);
 });
 app.get("/", (req, res, next) => {
-  res.send("Hello World23456")
+  res.send("Amjad Haneef")
 });
 app.listen(port, () => {
  console.log("Server running on port 3000");
